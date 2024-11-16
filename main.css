@@ -1,0 +1,200 @@
+body {
+    margin: 0; /* Menghapus margin pada body */
+    padding: 0; /* Menghapus padding pada body */
+}
+
+
+.header {
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 0px;
+    text-align: LEFT;
+}
+
+
+.header {
+    height: 60px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.header img {
+    position: relative;
+    top: -70px;
+    left: -0px;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin: 0px auto;
+  }
+
+body {
+    background-color: 
+    #ececec;
+    color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.produk {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.produk .item {
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.produk .item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.produk .item h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.produk .item p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.produk .item .harga {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.produk .item {
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff; /* Add this line */
+}
+
+.produk .item .beli {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.produk .item .beli:hover {
+    background-color: #000000;
+}
+
+.slider {
+    position: relative;
+    max-width: 100%; /* Lebar maksimum slider */
+    overflow: hidden; /* Menghilangkan gambar yang melampaui batas */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease; /* Animasi saat berpindah slide */
+}
+
+.slide {
+    min-width: 100%; /* Setiap slide mengambil lebar penuh */
+}
+
+.slide img {
+    width: 100%; /* Gambar mengisi slide */
+    height: auto; /* Menjaga rasio aspek */
+    max-height: 400px;
+}
+
+button.prev, button.next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.5);
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        button.prev {
+            left: 10px; /* Posisi tombol sebelumnya */
+        }
+
+        button.next {
+            right: 10px; /* Posisi tombol berikutnya */
+        }
+
+.container {
+    display: flex;
+    justify-content: center; /* Mengatur produk di tengah */
+    overflow-x: auto; /* Menambahkan scroll horizontal jika diperlukan */
+    padding: 10px; /* Tambahkan padding jika perlu */
+}
+
+.produk {
+    display: flex; /* Mengatur produk dalam satu baris */
+    flex-wrap: nowrap; /* Mencegah item untuk membungkus ke baris baru */
+}
+
+.item {
+    min-width: 200px; /* Atur lebar minimum untuk setiap item */
+    margin: 10px; /* Spasi antar item */
+    flex: 0 0 auto; /* Mencegah item untuk menyusut */
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366; /* Warna hijau WhatsApp */
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Pastikan tombol terlihat di atas elemen lain */
+}
+
+.whatsapp-button img {
+    width: 50px; /* Ukuran ikon WhatsApp */
+    height: 50px; /* Ukuran ikon WhatsApp */
+}
+
+.running-text {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #f0f0f0; /* Warna latar belakang */
+    padding: 10px 0; /* Padding atas dan bawah */
+    position: relative;
+}
+
+.running-text p {
+    display: inline-block;
+    animation: marquee 10s linear infinite; /* Durasi dan jenis animasi */
+    margin: 0; /* Menghapus margin default */
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
